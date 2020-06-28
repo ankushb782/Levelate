@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="No Restriction" />
+    <item
+        android:id="@+id/two"
+        android:title="Vegeterian"/>
+    <item
+        android:id="@+id/three"
+        android:title="Vegan"/>
+    <item
+        android:id="@+id/four"
+        android:title="Peseetariay"/>
+    <item
+        android:id="@+id/five"
+        android:title="Keto"/>
+    <item
+        android:id="@+id/six"
+        android:title="Lactose Intolrate"/>
+</menu>

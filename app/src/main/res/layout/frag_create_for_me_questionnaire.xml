@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dim_32"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="@dimen/dim_12"
+        android:fontFamily="@font/mulimedium"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/questionnare"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_32"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:fontFamily="@font/mulilight"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/current_weight"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16" />
+
+
+        <LinearLayout
+            android:id="@+id/llWeight"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_0.5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/tvSubHeading"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:background="@drawable/et_background_grey"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dim_16"
+                    android:fontFamily="@font/mulilight"
+                    android:textSize="@dimen/universal_text_size14"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etWeight"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:background="@drawable/et_background_grey"
+                    android:fontFamily="@font/mulilight"
+                    android:paddingStart="@dimen/dim_8"
+                    android:paddingEnd="@dimen/dim_8"
+                    android:text="@string/pound"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14"
+                    android:visibility="visible"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llWeight"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@drawable/et_border_fill_accent"
+            android:fontFamily="@font/mulisemibold"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingEnd="@dimen/dim_8"
+            android:text="@string/next_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size14"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

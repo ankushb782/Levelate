@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:layout_margin="@dimen/dim_32">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_12">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulimedium"
+            android:letterSpacing="0.1"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/heading_my_meal_plan"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size18" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_32"
+            android:layout_below="@+id/tvHeading">
+        <LinearLayout
+            android:id="@+id/myOwnMealPlan"
+            android:layout_width="@dimen/dim_180"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_shape"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_24">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_16"
+                android:src="@drawable/meal_plan_icon1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:fontFamily="@font/mulibold"
+                android:gravity="center"
+                android:padding="@dimen/dim_8"
+                android:text="@string/create_own_meal"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCreateForMe"
+            android:layout_width="@dimen/dim_180"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myOwnMealPlan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_12"
+            android:background="@drawable/circle_shape"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_24">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/meal_plan_icon2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:fontFamily="@font/mulibold"
+                android:gravity="center"
+                android:padding="@dimen/dim_4"
+                android:text="@string/customise_meal_for_me"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size16" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_black"
+            android:fontFamily="@font/sinkinsanslight"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:padding="@dimen/dim_4"
+            android:text="@string/and"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/universal_text_size18" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

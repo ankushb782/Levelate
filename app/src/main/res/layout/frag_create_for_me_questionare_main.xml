@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/mulimedium"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/create_for_me"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvHeading"
+        android:layout_marginTop="@dimen/dim_16"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_4"
+            android:layout_marginTop="@dimen/dim_32"
+            android:layout_marginEnd="@dimen/dim_4"
+            android:fontFamily="@font/mulisemibold"
+            android:gravity="center_horizontal"
+            android:text="@string/questionnare_content"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_marginStart="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_24"
+            android:fontFamily="@font/mulisemibold"
+            android:gravity="center"
+            android:text="@string/questionnare_content1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/dim_100"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/et_border_fill_accent"
+            android:fontFamily="@font/mulisemibold"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingEnd="@dimen/dim_8"
+            android:text="@string/questionnare"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size14"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/mulimedium"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/check_in_questionare"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+    <TextView
+        android:id="@+id/tvSubmitHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading"
+        android:layout_marginTop="@dimen/dim_32"
+        android:layout_marginBottom="@dimen/dim_12"
+        android:fontFamily="@font/mulisemibold"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/submit_photos"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size16" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_12"
+            android:fontFamily="@font/mulisemibold"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/heading_front"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16"
+            android:layout_marginLeft="@dimen/dim_4" />
+
+        <EditText
+            android:id="@+id/etFront"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background_grey"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dim_14"
+            android:drawableEnd="@drawable/ic_folder_black_24dp"
+            android:fontFamily="@font/mulilight"
+            android:textSize="@dimen/universal_text_size14"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_8"
+            android:drawableRight="@drawable/ic_folder_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:fontFamily="@font/mulisemibold"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/heading_side"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16"
+            android:layout_marginLeft="@dimen/dim_4" />
+
+        <EditText
+            android:id="@+id/etSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background_grey"
+            android:inputType="textPersonName"
+            android:drawableEnd="@drawable/ic_folder_black_24dp"
+            android:padding="@dimen/dim_14"
+            android:fontFamily="@font/mulilight"
+            android:textSize="@dimen/universal_text_size14"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_8"
+            android:drawableRight="@drawable/ic_folder_black_24dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:fontFamily="@font/mulisemibold"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/heading_back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16"
+            android:layout_marginLeft="@dimen/dim_4" />
+
+        <EditText
+            android:id="@+id/etBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background_grey"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dim_14"
+            android:drawableEnd="@drawable/ic_folder_black_24dp"
+            android:fontFamily="@font/mulilight"
+            android:textSize="@dimen/universal_text_size14"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_8"
+            android:drawableRight="@drawable/ic_folder_black_24dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_marginRight="@dimen/dim_8"
+                android:background="@drawable/et_border_fill_accent"
+                android:fontFamily="@font/mulisemibold"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"
+                android:text="@string/prev_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size14"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWeight"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@drawable/et_border_fill_accent"
+                android:fontFamily="@font/mulisemibold"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"
+                android:text="@string/btn_submit_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size14"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

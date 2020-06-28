@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dim_12"
+        android:fontFamily="@font/mulilight"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/custom_macros"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnViewMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/mulisemibold"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingEnd="@dimen/dim_8"
+            android:text="@string/btn_view_meal_text"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:fontFamily="@font/mulisemibold"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="@string/today_targets"
+                android:padding="@dimen/dim_12"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/universal_text_size16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4"
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/appBar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_marginBottom="@dimen/dim_4"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:fontFamily="@font/mulisemibold"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:text="@string/overall_calories"
+                android:padding="@dimen/dim_8"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size16" />
+
+            <RelativeLayout
+                android:id="@+id/myOwnMealPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/et_border_fill_accent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/mulisemibold"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:paddingEnd="@dimen/dim_12"
+                    android:paddingStart="@dimen/dim_12"
+                    android:paddingBottom="@dimen/dim_4"
+                    android:paddingTop="@dimen/dim_4"
+                    android:text="1800"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dim_12"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_250" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_border_fill_accent"
+        android:fontFamily="@font/mulimedium"
+        android:paddingStart="@dimen/dim_8"
+        android:paddingEnd="@dimen/dim_8"
+        android:letterSpacing="0.1"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_calculate_text"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size14"
+        android:visibility="visible" />
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

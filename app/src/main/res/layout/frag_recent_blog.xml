@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeading"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/card_view_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blog_banner" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_32"
+                android:layout_marginRight="@dimen/dim_32"
+                android:layout_marginLeft="32dp"
+                android:layout_below="@+id/cvImage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulibold"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/heading_title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulilight"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/text_dummy"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulilight"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:text="@string/lorem"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulibold"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:text="@string/heading_recent_blog"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llContent"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginBottom="@dimen/dim_16"
+
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dim_32"
+                    android:layout_marginRight="32dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

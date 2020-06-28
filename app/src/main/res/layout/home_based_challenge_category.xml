@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rlCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/dim_12">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appBar"
+                    android:layout_gravity="center"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:fontFamily="@font/mulimedium"
+                    android:gravity="center_horizontal"
+                    android:justificationMode="inter_word"
+                    android:text="@string/home_based_challenge"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:background="@drawable/btn_round_border"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulisemibold"
+                            android:layout_margin="@dimen/dim_12"
+                            android:justificationMode="inter_word"
+                            android:text="Week-1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="@dimen/dim_0.5"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlack" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulisemibold"
+                            android:layout_margin="@dimen/dim_12"
+                            android:justificationMode="inter_word"
+                            android:text="Day-1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size16" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    tools:listitem="@layout/gym_category_list_item"
+                    android:scrollbars="none" />
+
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rlChallenges1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dim_12"
+                android:background="@drawable/btn_round_normal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCustomMacros"
+                    android:layout_width="@dimen/dim_60"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/dim_8"
+                    android:background="@drawable/dashboard_box_dots"
+                    android:src="@drawable/challenge_icon"
+                    android:tint="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvChallenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCustomMacros"
+                    android:layout_toRightOf="@+id/ivCustomMacros"
+                    android:fontFamily="@font/mulilight"
+                    android:padding="@dimen/dim_12"
+                    android:text="@string/heading_challenges1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:scaleType="fitEnd"
+                    android:layout_below="@+id/tvChallenge"
+                    android:src="@drawable/dashboard_corner"
+                    android:tint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlChallenges2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dim_12"
+                android:background="@drawable/btn_round_normal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCustomMacros1"
+                    android:layout_width="@dimen/dim_60"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/dim_8"
+                    android:background="@drawable/dashboard_box_dots"
+                    android:src="@drawable/challenge_icon"
+                    android:tint="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvChallenge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCustomMacros1"
+                    android:layout_toRightOf="@+id/ivCustomMacros1"
+                    android:fontFamily="@font/mulilight"
+                    android:padding="@dimen/dim_12"
+                    android:text="@string/heading_challenges2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:scaleType="fitEnd"
+                    android:layout_below="@+id/tvChallenge1"
+                    android:src="@drawable/dashboard_corner"
+                    android:tint="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlChallenges3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dim_12"
+                android:background="@drawable/btn_round_normal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCustomMacros2"
+                    android:layout_width="@dimen/dim_60"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/dim_8"
+                    android:background="@drawable/dashboard_box_dots"
+                    android:src="@drawable/challenge_icon"
+                    android:tint="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvChallenge3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCustomMacros2"
+                    android:layout_toRightOf="@+id/ivCustomMacros2"
+                    android:fontFamily="@font/mulilight"
+                    android:padding="@dimen/dim_12"
+                    android:text="@string/heading_challenges3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:scaleType="fitEnd"
+                    android:layout_below="@+id/tvChallenge3"
+                    android:src="@drawable/dashboard_corner"
+                    android:tint="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlChallenges4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:visibility="gone"
+                android:layout_marginBottom="@dimen/dim_12"
+                android:background="@drawable/btn_round_normal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCustomMacros3"
+                    android:layout_width="@dimen/dim_60"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/dim_8"
+                    android:background="@drawable/dashboard_box_dots"
+                    android:src="@drawable/challenge_icon"
+                    android:tint="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvChallenge4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCustomMacros3"
+                    android:layout_toRightOf="@+id/ivCustomMacros3"
+                    android:fontFamily="@font/mulilight"
+                    android:padding="@dimen/dim_12"
+                    android:text="@string/heading_challenges4"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_15"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:scaleType="fitEnd"
+                    android:layout_below="@+id/tvChallenge4"
+                    android:src="@drawable/dashboard_corner"
+                    android:tint="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

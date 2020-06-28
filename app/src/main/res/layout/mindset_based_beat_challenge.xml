@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dim_32">
+
+
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rlCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_12"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/appBar"
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:fontFamily="@font/mulimedium"
+                    android:gravity="center_horizontal"
+                    android:justificationMode="inter_word"
+                    android:text="@string/weekly_mindset_task"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:background="@drawable/btn_round_border">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dim_12"
+                            android:fontFamily="@font/mulisemibold"
+                            android:justificationMode="inter_word"
+                            android:text="Week-1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dim_0.5"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/dim_4"
+                        android:layout_marginEnd="@dimen/dim_4"
+                        android:background="@color/colorBlack" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dim_12"
+                            android:fontFamily="@font/mulisemibold"
+                            android:justificationMode="inter_word"
+                            android:text="Day-1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size14" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvChallenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appBar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:fontFamily="@font/mulimedium"
+                    android:gravity="center_horizontal"
+                    android:justificationMode="inter_word"
+                    android:text="Task 1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size20" />
+
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appBar"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_marginBottom="@dimen/dim_12"
+                android:fontFamily="@font/mulilight"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="@string/heading_time"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/llGymBased"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_border_without_fill"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/appBar"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_marginEnd="@dimen/dim_12"
+                            android:layout_marginBottom="@dimen/dim_4"
+                            android:fontFamily="@font/muliregular"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:justificationMode="inter_word"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="50sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/mulilight"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/tvCount"
+                            android:text="@string/seconds"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size18" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBeatTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_32"
+                android:layout_below="@+id/tvSubHeading"
+                android:layout_gravity="right|center_vertical"
+                android:layout_alignParentBottom="true"
+
+                android:background="@drawable/et_border_fill_accent"
+                android:fontFamily="@font/mulisemibold"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"
+                android:text="@string/beat_your_time"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size14"
+                android:visibility="visible" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

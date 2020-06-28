@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dim_32">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/dim_12"
+        android:fontFamily="@font/mulimedium"
+        android:letterSpacing="0.1"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/heading_weekly_mindset_task"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dim_12">
+
+
+                <RelativeLayout
+                    android:id="@+id/myOwnMealPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/et_border_fill_accent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:drawablePadding="@dimen/dim_24"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:padding="@dimen/dim_8"
+                        android:text="@string/heading_filter"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

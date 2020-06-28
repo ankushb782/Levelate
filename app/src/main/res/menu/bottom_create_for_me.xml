@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_nutrition"
+        android:icon="@drawable/calender_alarm"
+        android:title="@string/nutrition_text" />
+
+    <item
+        android:id="@+id/action_mindset"
+        android:icon="@drawable/target"
+        android:title="@string/mind_set" />
+
+    <item
+        android:id="@+id/action_training"
+        android:icon="@drawable/text"
+        android:title="@string/menu_training" />
+
+    <item
+        android:id="@+id/action_account"
+        android:icon="@drawable/juice"
+        android:title="@string/menu_my_account" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:title="@string/menu_my_account" />
+
+
+
+
+</menu>

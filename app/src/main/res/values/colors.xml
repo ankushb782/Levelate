@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#313f4c</color>
+    <color name="colorPrimaryDark">#313F4C</color>
+    <color name="colorAccent">#66fcf3</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorAccentLight">#66fcf3</color>
+    <color name="colorgreen">#66fcf3</color>
+    <color name="colorGreen">#dcfcd7</color>
+    <color name="colorWhite">#FFFF</color>
+
+    <color name="grey">#eeeeee</color>
+    <color name="colorText">#90959c</color>
+    <color name="colorFacebook">#4169b3</color>
+    <color name="colorTwitter">#1da1f3</color>
+    <color name="green">#6ab846</color>
+    <color name="colorGoogle">#dc4f42</color>
+    <color name="colorButtonTextDisabled">#ABABAB</color>
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:layout_margin="32dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/dim_12"
+        android:fontFamily="@font/mulimedium"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="@string/mindet_journal"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/universal_text_size18" />
+
+    <RelativeLayout
+        android:id="@+id/rlDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading"
+        android:layout_marginTop="@dimen/dim_12">
+
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:fontFamily="@font/mulibold"
+            android:gravity="center_horizontal"
+            android:text="Day 1/30"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:fontFamily="@font/mulibold"
+            android:gravity="right"
+            android:text="Date:23/05/2020"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size14" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlDates"
+        android:layout_above="@+id/llNext"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="@string/heading_thought"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <EditText
+                    android:id="@+id/etFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_100"
+                    android:layout_below="@+id/tvSubHeading"
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:background="@drawable/et_background_grey"
+                    android:fontFamily="@font/mulilight"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dim_14"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="@string/heading_how_are_your_energy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <EditText
+                    android:id="@+id/etSide"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_100"
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:background="@drawable/et_background_grey"
+                    android:fontFamily="@font/mulilight"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dim_14"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/heading_how_much_sleep"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <EditText
+                    android:id="@+id/etBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_100"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:background="@drawable/et_background_grey"
+                    android:fontFamily="@font/mulilight"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dim_14"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/llNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etWeight"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/et_border_fill_accent"
+            android:fontFamily="@font/mulisemibold"
+
+            android:text="@string/next_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size14"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

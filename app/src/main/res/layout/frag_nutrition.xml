@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:layout_margin="@dimen/dim_32">
+
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/mulimedium"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/heading_nutrition"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size18" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMacros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_32"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/dim_10"
+
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorgreen">
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:background="@drawable/dashboard_box_dots"
+                android:tint="@color/colorPrimary" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivCustomMacros"
+                        android:layout_width="@dimen/dim_60"
+                        android:layout_height="@dimen/dim_60"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/nutrition_icon1"
+                        android:tint="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivCustomMacros"
+                        android:layout_toRightOf="@+id/ivCustomMacros"
+                        android:fontFamily="@font/mulibold"
+                        android:padding="10dp"
+                        android:text="@string/custom_macros"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size16" />
+
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_18"
+                android:layout_gravity="bottom|end"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dashboard_corner"
+                android:tint="@color/colorPrimary" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMyMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/dim_10"
+
+            app:cardElevation="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorgreen">
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:background="@drawable/dashboard_box_dots"
+                android:tint="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivMyMeal"
+                        android:layout_width="@dimen/dim_60"
+                        android:layout_height="@dimen/dim_60"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/nutrition_icon2"
+                        android:tint="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivMyMeal"
+                        android:layout_toRightOf="@+id/ivMyMeal"
+                        android:fontFamily="@font/mulibold"
+                        android:padding="10dp"
+                        android:text="@string/my_meal_plan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size16" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_18"
+                android:layout_gravity="bottom|end"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dashboard_corner"
+                android:tint="@color/colorPrimary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            app:cardCornerRadius="@dimen/dim_10"
+
+            android:clickable="true"
+            app:cardElevation="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorgreen">
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:background="@drawable/dashboard_box_dots"
+                android:tint="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivRecipe"
+                        android:layout_width="@dimen/dim_60"
+                        android:layout_height="@dimen/dim_60"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/nutrition_icon3"
+                        android:tint="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivRecipe"
+                        android:layout_toRightOf="@+id/ivRecipe"
+                        android:fontFamily="@font/mulibold"
+                        android:padding="10dp"
+                        android:text="@string/recipe"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size16" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_18"
+                android:layout_gravity="bottom|end"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dashboard_corner"
+                android:tint="@color/colorPrimary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            android:clickable="true"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/dim_10"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorgreen">
+
+            <ImageView
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_60"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:background="@drawable/dashboard_box_dots"
+                android:tint="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivCheck"
+                        android:layout_width="@dimen/dim_60"
+                        android:layout_height="@dimen/dim_60"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:padding="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/nutrition_icon4"
+                        android:tint="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:id="@+id/tvCheckIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivCheck"
+                        android:layout_toRightOf="@+id/ivCheck"
+                        android:fontFamily="@font/mulibold"
+                        android:padding="10dp"
+                        android:text="@string/check_in"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/universal_text_size16" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_18"
+                android:layout_gravity="bottom|end"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dashboard_corner"
+                android:tint="@color/colorPrimary" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

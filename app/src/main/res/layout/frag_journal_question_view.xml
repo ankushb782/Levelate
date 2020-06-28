@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_marginBottom="@dimen/dim_16"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dim_12"
+                android:fontFamily="@font/mulimedium"
+                android:letterSpacing="0.1"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="@string/mindet_journal"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/universal_text_size18" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12">
+
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:fontFamily="@font/mulibold"
+                    android:gravity="center_horizontal"
+                    android:text="Day 1/30"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+
+                    android:layout_marginBottom="@dimen/dim_12"
+                    android:fontFamily="@font/mulibold"
+                    android:gravity="right"
+                    android:text="Date:23/05/2020"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/heading_thought"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulilight"
+                    android:gravity="center_vertical"
+
+                    android:paddingBottom="@dimen/dim_8"
+                    android:text="@string/lorem"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/dim_4"
+                    android:text="@string/heading_how_are_your_energy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulilight"
+                    android:gravity="center_vertical"
+
+                    android:paddingBottom="@dimen/dim_8"
+                    android:text="@string/lorem"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/mulisemibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/heading_how_much_sleep"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulilight"
+                    android:gravity="center_vertical"
+
+                    android:paddingBottom="@dimen/dim_8"
+                    android:text="@string/lorem"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/universal_text_size14" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

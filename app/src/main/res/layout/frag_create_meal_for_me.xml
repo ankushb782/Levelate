@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dim_32"
+   >
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/mulimedium"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/create_for_me"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size18" />
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeading"
+            android:layout_marginStart="@dimen/dim_24"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_marginEnd="@dimen/dim_24"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:fontFamily="@font/mulimedium"
+            android:gravity="center"
+            android:text="@string/meal_note"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/universal_text_size16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_marginTop="@dimen/dim_24">
+
+            <RelativeLayout
+                android:id="@+id/rlMonth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_110"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dim_250"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginRight="@dimen/dim_24">
+
+                    <RelativeLayout
+                        android:id="@+id/myOwnMealPlan"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/et_border_fill_grey_wave_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dim_12">
+
+                        <TextView
+                            android:id="@+id/tvPriceMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_marginTop="@dimen/dim_12"
+                            android:layout_marginEnd="@dimen/dim_12"
+                            android:layout_marginBottom="@dimen/dim_12"
+                            android:fontFamily="@font/mulibold"
+                            android:gravity="center_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="@string/price_per_month"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size18" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlBuyNow"
+                        android:layout_width="@dimen/dim_90"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/et_border_fill_accent_wave_shape"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/dim_16"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulibold"
+                            android:gravity="center_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="@string/buy_now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlWeek"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_110"
+                android:layout_below="@+id/rlMonth"
+                android:layout_marginTop="@dimen/dim_24"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dim_250"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginRight="@dimen/dim_24">
+                    <RelativeLayout
+                        android:layout_width="@dimen/dim_90"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"                    android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/et_border_fill_accent_wave_shape"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/dim_16"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulibold"
+                            android:gravity="center_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="@string/buy_now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/et_border_fill_grey_wave_shape"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dim_12">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_marginTop="@dimen/dim_12"
+                            android:layout_marginEnd="@dimen/dim_12"
+                            android:layout_marginBottom="@dimen/dim_12"
+                            android:fontFamily="@font/mulibold"
+                            android:gravity="center_horizontal"
+                            android:justificationMode="inter_word"
+                            android:text="@string/price_per_month"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/universal_text_size18" />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
